@@ -1,0 +1,15 @@
+(assert(silla))
+<Fact-1>
+(assert(banana))
+<Fact-2>
+(assert(simio))
+<Fact-3>
+(facts)
+f-1     (silla)
+f-2     (banana)
+f-3     (simio)
+(defrule movimiento(simio-camina-a-la-silla)=>(assert(llego-a-la-silla)))
+(defrule tomar(simio-toma-la-silla)=>(assert(simio-tomo-silla)))
+(defrule centrar(simio-lleva-silla-al-centro)=>(assert(simio-centro-silla)))
+(defrule subir(simio-subio-a-la-silla)=>(assert(simio-sobre-la-silla)))
+(defrule tomar-banana(simio-toma-la-banana)=>(assert(simio-tiene-la-banana)))
